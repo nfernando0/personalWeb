@@ -91,6 +91,7 @@ select {
   display: flex;
   padding: 2rem 2.5rem;
   margin: 50px 50px;
+  width: 80%;
 }
 
 .container .left {
@@ -108,6 +109,9 @@ select {
   flex: 50%;
 }
 
+.card img {
+  width: 100%;
+}
 
 .container .btnContact {
   margin: 20px 0;
@@ -120,7 +124,12 @@ select {
 .container .card {
   border: 1px solid #000000;
   text-align: center;
-  width: 80%;
+  width: 50%;
   box-shadow: 0 0 15px #d0d0d0;
   margin: auto;
+}
+
+.icon i {
+  margin: 30px 10px;
+  font-size: 30px;
 }
