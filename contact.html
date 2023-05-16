@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,700;1,700&display=swap" rel="stylesheet" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header>
+      <nav>
+        <img src="logo.png" alt="" />
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="">My Project</a></li>
+        </ul>
+      </nav>
+      <a class="btn">Contact Me</a>
+    </header>
+    <!-- End Navbar -->
+
+    <!-- Contact -->
+    <div class="contact">
+      <h1>GET IN TOUCH</h1>
+
+      <form>
+        <div class="formGroup">
+          <label for="name">Name</label>
+          <input type="text" name="name" id="name" />
+        </div>
+        <div class="formGroup">
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" />
+        </div>
+        <div class="formGroup">
+          <label for="phone">Phone Number</label>
+          <input type="number" name="phone" id="phone" />
+        </div>
+        <div class="formGroup">
+          <label for="phone">Subject</label>
+          <select name="subject" id="subject">
+            <option value="">1</option>
+            <option value="">2</option>
+            <option value="">3</option>
+          </select>
+        </div>
+        <div class="formGroup">
+          <label for="msg">Your Message</label>
+          <textarea name="msg" class="msg" id="msg" cols="48" rows="5"></textarea>
+        </div>
+        <button type="submit" class="btnSubmit">Submit</button>
+      </form>
+    </div>
+    <!-- End Contact -->
+  </body>
+</html>
