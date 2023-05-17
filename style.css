@@ -81,6 +81,7 @@ select {
   background-color: rgb(42, 42, 82);
   color: #ffffff;
   border-radius: 10px;
+  cursor: pointer;
 }
 
 /* Card */

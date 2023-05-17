@@ -47,20 +47,23 @@
           <input type="number" name="phone" id="phone" />
         </div>
         <div class="formGroup">
-          <label for="phone">Subject</label>
+          <label for="subject">Subject</label>
           <select name="subject" id="subject">
-            <option value="">1</option>
-            <option value="">2</option>
-            <option value="">3</option>
+            <option value="" hidden></option>
+            <option value="frontend">front end</option>
+            <option value="backend">back end</option>
+            <option value="fullstack">full stack</option>
           </select>
         </div>
         <div class="formGroup">
           <label for="msg">Your Message</label>
           <textarea name="msg" class="msg" id="msg" cols="75" rows="5"></textarea>
         </div>
-        <button type="submit" class="btnSubmit">Submit</button>
+        <button type="button" onclick="submitData()" class="btnSubmit">Submit</button>
       </form>
     </div>
     <!-- End Contact -->
+
+    <script src="script.js"></script>
   </body>
 </html>
