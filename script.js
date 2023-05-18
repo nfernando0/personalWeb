@@ -7,15 +7,14 @@ function submitData() {
 
   if (name == "") {
     return alert("Nama tidak boleh kosong!");
-  }
-  if (email == "") {
+  } else if (email == "") {
     return alert("Email tidak boleh kosong!");
-  }
-  if (phone == "") {
+  } else if (phone == "") {
     return alert("Nomor HP tidak boleh kosong!");
-  }
-  if (subject == "") {
+  } else if (subject == "") {
     return alert("Subject tidak boleh kosong!");
+  } else if (message == "") {
+    return alert("Pesan harus di isi!");
   }
 
   let data = {
