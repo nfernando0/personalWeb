@@ -18,12 +18,6 @@ function submitData() {
     return alert("Subject tidak boleh kosong!");
   }
 
-  let emailReceiver = "nandof986@gmail.com";
-  let a = document.createElement("a");
-
-  a.href = `mailto:${emailReceiver}?subject=${subject}&body=Hallo, nama saya ${name}, ${message}, tolong hubungi saya di nomor ${phone}, terima kasih`;
-  a.click();
-
   let data = {
     name,
     email,
@@ -31,4 +25,12 @@ function submitData() {
     subject,
     message,
   };
+
+  console.log(data);
+
+  let emailReceiver = "nandof986@gmail.com";
+  let a = document.createElement("a");
+
+  a.href = `https://mail.google.com/mail/?view=cm&fs=1&to=${emailReceiver}?subject=${subject}&body=Hallo, nama saya ${name}, ${message}, tolong hubungi saya di nomor ${phone}, terima kasih`;
+  a.click();
 }
