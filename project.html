@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,700;1,700&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Home</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header>
+      <nav>
+        <img src="logo.png" alt="" />
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#">My Project</a></li>
+        </ul>
+      </nav>
+      <a href="contact.html" class="btn">Contact Me</a>
+    </header>
+    <!-- End Navbar -->
+
+    <!-- inputProject -->
+    <section class="project">
+      <div class="container">
+        <h1>Create a Project</h1>
+
+        <form>
+          <div class="project__group">
+            <label for="title">Project Name</label>
+            <input type="text" id="title" />
+          </div>
+          <div class="flex date">
+            <div class="project__group">
+              <label for="title">Start Date</label>
+              <input type="text" id="title" />
+            </div>
+            <div class="project__group">
+              <label for="title">End Date</label>
+              <input type="text" id="title" />
+            </div>
+          </div>
+          <div class="project__group">
+            <label for="desc">Description</label>
+            <textarea id="desc"></textarea>
+          </div>
+          <div>
+            <label class="technologies">Technologies</label>
+            <div class="flex tech">
+              <div class="left">
+                <div>
+                  <input type="checkbox" id="node" value="node js" />
+                  <label for="node">Node JS</label>
+                </div>
+                <div>
+                  <input type="checkbox" id="node" value="node js" />
+                  <label for="node">React JS</label>
+                </div>
+              </div>
+              <div class="right">
+                <div>
+                  <input type="checkbox" id="node" value="node js" />
+                  <label for="node">Next JS</label>
+                </div>
+                <div>
+                  <input type="checkbox" id="node" value="node js" />
+                  <label for="node">TypeScript</label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project__group">
+            <label for="upload">Upload Images</label>
+            <input type="file" id="upload" />
+          </div>
+
+          <div class="btn__submit">
+            <button class="btnSubmit">Submit</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>

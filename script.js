@@ -30,6 +30,6 @@ function submitData() {
   let emailReceiver = "nandof986@gmail.com";
   let a = document.createElement("a");
 
-  a.href = `https://mail.google.com/mail/?view=cm&fs=1&to=${emailReceiver}?subject=${subject}&body=Hallo, nama saya ${name}, ${message}, tolong hubungi saya di nomor ${phone}, terima kasih`;
+  a.href = `https://mail.google.com/mail/?view=cm&fs=1&to=${emailReceiver}?Subject=${subject}&body=Hallo, nama saya ${name}, ${message}, tolong hubungi saya di nomor ${phone}, terima kasih`;
   a.click();
 }

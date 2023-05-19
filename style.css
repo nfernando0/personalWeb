@@ -86,7 +86,7 @@ select {
 
 /* Card */
 
-.container {
+.card .container {
   background-color: #ffffff;
   box-sizing: 0 0 15px #d0d0d0;
   display: flex;
@@ -134,3 +134,60 @@ select {
   margin: 30px 10px;
   font-size: 30px;
 }
+
+/* Project */
+
+.project .container {
+  /* background-color: #ffffff; */
+  width: 100%;
+  margin: auto;
+  padding: 20px;
+}
+
+.project .container h1 {
+  text-align: center;
+}
+
+.project .project__group {
+  width: 100%;
+  margin: 9px 0;
+}
+.project .project__group textarea {
+  width: 100%;
+  resize: none;
+  height: 10rem;
+  border: none;
+  padding: 5px;
+}
+.project .project__group input {
+  width: 100%;
+  padding: 5px;
+  border: none;
+}
+
+.project .project__group label {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.technologies {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin: 20px 0;
+}
+
+.flex {
+  display: flex;
+  gap: 30px;
+}
+
+.tech {
+  width: 100%;
+}
+
+.btn__submit {
+  display: flex;
+  justify-content: end;
+}
+
+
