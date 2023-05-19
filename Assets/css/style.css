@@ -190,4 +190,75 @@ select {
   justify-content: end;
 }
 
+/* My Project */
+.myProjects {
+  background-color: #ffffff;
+  padding: 2rem 7%;
+}
+.myProjects > h1 {
+  text-align: center;
+}
 
+.myProjects .project__card {
+  border: 1px solid #ddd;
+  width: 20%;
+  padding: 10px;
+}
+.myProjects .project__card img {
+  width: 100%;
+}
+.myProjects .project__card__body .durasi {
+  font-weight: 400;
+  margin: 0 0 10px 0;
+}
+.myProjects .project__card__body .btn__card {
+  display: flex;
+  margin-top: 20px;
+}
+.myProjects .project__card__body .btn__card button {
+  width: 100%;
+  padding: 5px;
+  margin: 5px;
+}
+.edit,
+.delete {
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+}
+.edit:hover {
+  background-color: lightblue;
+  color: #ffffff;
+}
+.delete:hover {
+  background-color: red;
+  color: #ffffff;
+}
+.flex__card {
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.myProject h4 {
+  text-align: center;
+  padding: 25px 0 10px 0;
+  font-size: 2rem;
+}
+
+.myProject .tech {
+  margin-top: 30px;
+}
+
+.myProject .container {
+  margin: auto;
+  /* background-color: #ffffff; */
+  width: 50%;
+  padding: 20px;
+}
+.myProject .body {
+  margin-top: 20px;
+}
+.myProject .body p {
+  text-align: justify;
+}
