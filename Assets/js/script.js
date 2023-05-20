@@ -33,3 +33,4 @@ function submitData() {
   a.href = `https://mail.google.com/mail/?view=cm&fs=1&to=${emailReceiver}?Subject=${subject}&body=Hallo, nama saya ${name}, ${message}, tolong hubungi saya di nomor ${phone}, terima kasih`;
   a.click();
 }
+

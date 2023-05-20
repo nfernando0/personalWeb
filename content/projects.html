@@ -15,6 +15,10 @@
     <!-- CSS -->
     <link rel="stylesheet" href="/Assets/css/style.css" />
 
+    <!-- Icon -->
+    <script src="https://kit.fontawesome.com/81634d0f93.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="/Assets/img/favicon.ico" type="image/x-icon">
+
     <title>Home</title>
   </head>
   <body>
@@ -36,7 +40,7 @@
       <div class="container">
         <h1>Create a Project</h1>
 
-        <form>
+        <form onsubmit="addBlog(event)">
           <div class="project__group">
             <label for="title">Project Name</label>
             <input type="text" id="title" />
@@ -44,11 +48,11 @@
           <div class="flex date">
             <div class="project__group">
               <label for="title">Start Date</label>
-              <input type="date" id="title" />
+              <input type="date" id="start" />
             </div>
             <div class="project__group">
               <label for="title">End Date</label>
-              <input type="date" id="title" />
+              <input type="date" id="end" />
             </div>
           </div>
           <div class="project__group">
@@ -60,44 +64,50 @@
             <div class="flex tech">
               <div class="left">
                 <div>
-                  <input type="checkbox" id="node" value="node js" />
-                  <label for="node">Node JS</label>
+                  <input type="checkbox" id="tech_js" value="node js" />
+                  <label for="tech_js">javascript</label>
                 </div>
                 <div>
-                  <input type="checkbox" id="node" value="node js" />
-                  <label for="node">React JS</label>
+                  <input type="checkbox" id="tech_react" value="node js" />
+                  <label for="tech_react">React JS</label>
                 </div>
               </div>
               <div class="right">
                 <div>
-                  <input type="checkbox" id="node" value="node js" />
-                  <label for="node">Next JS</label>
+                  <input type="checkbox" id="tech_php" value="node js" />
+                  <label for="tech_php">PHP</label>
                 </div>
                 <div>
-                  <input type="checkbox" id="node" value="node js" />
-                  <label for="node">TypeScript</label>
+                  <input type="checkbox" id="tech_java" value="node js" />
+                  <label for="tech_java">Java</label>
                 </div>
               </div>
             </div>
           </div>
-          <div class="project__group">
-            <label for="upload">Upload Images</label>
-            <input type="file" id="upload" />
+          <div class="project__group position-relative bg-white p-5 border-radius">
+              <label for="upload" class="flex upload">
+                <p>
+                  Upload Images
+                </p>
+                <img src="/Assets/img/file.png" class="position-absolute right-0" alt="">
+              </label>
+              <input type="file" id="upload" hidden/>
           </div>
 
           <div class="btn__submit">
-            <button class="btnSubmit">Submit</button>
+            <button class="btnSubmit" type="submit">Submit</button>
           </div>
         </form>
+
       </div>
     </section>
 
     <!-- My Project -->
-
+    
     <section class="myProjects">
       <h1>My Project</h1>
-
-      <div class="flex flex__card">
+      
+      <div class="flex flex__card" id="content">
         <div class="project__card">
           <div class="project__card__img">
             <img src="http://via.placeholder.com/50x50" alt="#" />
@@ -106,48 +116,10 @@
             <a href="/content/project.html"><h4>Dumbways Mobile App - 2021</h4></a>
             <p class="durasi">durasi : 3bln</p>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste, modi!</p>
-            <div class="btn__card">
-              <button class="edit">Edit</button>
-              <button class="delete">Delete</button>
-            </div>
-          </div>
-        </div>
-        <div class="project__card">
-          <div class="project__card__img">
-            <img src="http://via.placeholder.com/50x50" alt="#" />
-          </div>
-          <div class="project__card__body">
-            <a href="/content/project.html"><h4>Dumbways Mobile App - 2021</h4></a>
-            <p class="durasi">durasi : 3bln</p>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste, modi!</p>
-            <div class="btn__card">
-              <button class="edit">Edit</button>
-              <button class="delete">Delete</button>
-            </div>
-          </div>
-        </div>
-        <div class="project__card">
-          <div class="project__card__img">
-            <img src="http://via.placeholder.com/50x50" alt="#" />
-          </div>
-          <div class="project__card__body">
-            <a href="/content/project.html"><h4>Dumbways Mobile App - 2021</h4></a>
-            <p class="durasi">durasi : 3bln</p>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste, modi!</p>
-            <div class="btn__card">
-              <button class="edit">Edit</button>
-              <button class="delete">Delete</button>
-            </div>
-          </div>
-        </div>
-        <div class="project__card">
-          <div class="project__card__img">
-            <img src="http://via.placeholder.com/50x50" alt="#" />
-          </div>
-          <div class="project__card__body">
-            <a href="/content/project.html"><h4>Dumbways Mobile App - 2021</h4></a>
-            <p class="durasi">durasi : 3bln</p>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste, modi!</p>
+            <div class="flex iconTech">
+             <a href="#"><i class="fa-brands fa-square-js fa-xl fa-fw"></i></a>
+             <a href="#"><i class="fa-brands fa-react fa-xl fa-fw"></i></a>
+              </div>
             <div class="btn__card">
               <button class="edit">Edit</button>
               <button class="delete">Delete</button>
@@ -155,6 +127,10 @@
           </div>
         </div>
       </div>
+    </div>
     </section>
+    
+    <script src="/Assets/js/project.js"></script>
+
   </body>
 </html>

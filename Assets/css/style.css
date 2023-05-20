@@ -5,6 +5,28 @@
   padding: 0;
 }
 
+.w-100 {
+  width: 100%;
+}
+.right-0 {
+  right: 0;
+}
+.position-absolute {
+  position: absolute;
+}
+.position-relative {
+  position: relative;
+}
+.bg-white {
+  background-color: #ffffff;
+}
+.p-5 {
+  padding: 0.5rem;
+}
+.border-radius {
+  border-radius: 1rem;
+}
+
 body {
   font-family: "Poppins", sans-serif;
   background-color: #d0d0d0d0;
@@ -261,4 +283,10 @@ select {
 }
 .myProject .body p {
   text-align: justify;
+}
+
+.iconTech {
+  margin: 10px 0;
+  color: #000000;
+  
 }
