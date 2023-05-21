@@ -6,8 +6,8 @@ function addBlog(event) {
   event.preventDefault();
 
   let title = document.getElementById("title").value;
-  let start = document.getElementById("start").value;
-  let end = document.getElementById("end").value;
+  let start = new Date(document.getElementById("start").value);
+  let end = new Date(document.getElementById("end").value);
   let desc = document.getElementById("desc").value;
   let image = document.getElementById("upload").files;
 
@@ -15,6 +15,10 @@ function addBlog(event) {
   const reactIcon = '<i class="fa-brands fa-react fa-xl fa-fw"></i>';
   const phpIcon = '<i class="fa-brands fa-php fa-xl fa-fw"></i>';
   const javaIcon = '<i class="fa-brands fa-java fa-xl fa-fw"></i>';
+
+  let diff = new Date(end - start);
+  let mounth = diff.getMonth();
+  let days = diff.getDate();
 
   let js = document.getElementById("tech_js").checked ? jsIcon : "";
   let react = document.getElementById("tech_react").checked ? reactIcon : "";
@@ -26,8 +30,8 @@ function addBlog(event) {
 
   let blog = {
     title,
-    start,
-    end,
+    mounth,
+    days,
     desc,
     js,
     react,
@@ -53,7 +57,7 @@ function renderBlog() {
           </div>
           <div class="project__card__body">
             <a href="/content/project.html"><h4>${dataBlog[i].title}</h4></a>
-            <p>${dataBlog[i].start} - ${dataBlog[i].end}</p>
+            <p>Durasi: ${dataBlog[i].mounth} bulan, ${dataBlog[i].days} hari </p>
             <p>${dataBlog[i].desc}</p>
             <div class="flex iconTech">
             ${dataBlog[i].js}
