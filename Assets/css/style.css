@@ -219,15 +219,19 @@ select {
 }
 .myProjects > h1 {
   text-align: center;
+  font-size: 2.5rem;
 }
 
 .myProjects .project__card {
   border: 1px solid #ddd;
   width: 20%;
   padding: 10px;
+  border-radius: 1rem;
+  box-shadow: 0 0 15px #d0d0d0;
 }
 .myProjects .project__card img {
   width: 100%;
+  border-radius: 1rem;
 }
 .myProjects .project__card__body .durasi {
   font-weight: 400;
@@ -247,13 +251,7 @@ select {
   cursor: pointer;
   border: none;
   border-radius: 10px;
-}
-.edit:hover {
-  background-color: lightblue;
-  color: #ffffff;
-}
-.delete:hover {
-  background-color: red;
+  background-color: #000000;
   color: #ffffff;
 }
 .flex__card {
@@ -261,7 +259,9 @@ select {
   flex-wrap: wrap;
   margin-top: 2rem;
 }
-
+.project__card__body .title__project {
+  color: #000000;
+}
 .myProject h4 {
   text-align: center;
   padding: 25px 0 10px 0;
@@ -288,5 +288,8 @@ select {
 .iconTech {
   margin: 10px 0;
   color: #000000;
-  
+}
+
+.project__card__body .body {
+  margin: 20px 0;
 }

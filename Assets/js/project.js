@@ -20,6 +20,7 @@ function addBlog(event) {
   let mounth = diff.getMonth();
   let days = diff.getDate();
 
+
   let js = document.getElementById("tech_js").checked ? jsIcon : "";
   let react = document.getElementById("tech_react").checked ? reactIcon : "";
   let php = document.getElementById("tech_php").checked ? phpIcon : "";
@@ -56,9 +57,9 @@ function renderBlog() {
             <img src="${dataBlog[i].image}" alt="#" />
           </div>
           <div class="project__card__body">
-            <a href="/content/project.html"><h4>${dataBlog[i].title}</h4></a>
-            <p>Durasi: ${dataBlog[i].mounth} bulan, ${dataBlog[i].days} hari </p>
-            <p>${dataBlog[i].desc}</p>
+            <a href="/content/project.html" class="title__project"><h4>${dataBlog[i].title}</h4></a>
+            <p class="durasi">Durasi: ${dataBlog[i].mounth} bulan, ${dataBlog[i].days} hari </p>
+            <p class="body">${dataBlog[i].desc}</p>
             <div class="flex iconTech">
             ${dataBlog[i].js}
             ${dataBlog[i].react}
